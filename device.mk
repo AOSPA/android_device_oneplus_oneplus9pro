@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+$(call inherit-product, vendor/arter97/arter97.mk)
+$(call inherit-product, vendor/lawnchair/lawnchair.mk)
+
 $(call inherit-product, vendor/oneplus/oneplus9pro/oneplus9pro-vendor.mk)
 $(call inherit-product, device/oneplus/oneplus9/device.mk)
 
