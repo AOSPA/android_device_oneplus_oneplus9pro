@@ -13,6 +13,12 @@
 # limitations under the License.
 
 $(call inherit-product, vendor/oneplus/oneplus9pro/oneplus9pro-vendor.mk)
+
+# LTPO display on the OnePlus 9 Pro doesn't have apparent gamma shifts
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.set_idle_timer_ms=80 \
+    ro.surface_flinger.set_touch_timer_ms=200
+
 $(call inherit-product, device/oneplus/oneplus9/device.mk)
 
 # Namespaces
