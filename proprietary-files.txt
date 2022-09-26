@@ -1,5 +1,5 @@
 # All proprietary files from this list, unless pinned and noted otherwise,
-# are from OnePlus 9 Pro (LE2125_11.C.61).
+# are from OnePlus 9 Pro (LE2125_11.C.63).
 
 # Audio
 odm/etc/acdbdata/Audio_Parameter_Version.txt
@@ -63,8 +63,6 @@ odm/vendor/firmware/iris5_ccf2.fw
 # Sensors
 odm/etc/sensor/config/lahaina_aw9610x_0.json
 odm/etc/sensor/config/lahaina_aw9610x_down_0.json
-odm/etc/sensor/config/lahaina_bmp380.json
-odm/etc/sensor/config/lahaina_lps22hb.json
 odm/etc/sensor/config/lahaina_qrd_ak0991x.json
 odm/etc/sensor/config/lahaina_qrd_alsps.json
 odm/etc/sensor/config/lahaina_qrd_bmi26x.json
