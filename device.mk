@@ -30,3 +30,8 @@ $(call inherit-product, device/oneplus/oneplus9/device.mk)
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/oneplus/oneplus9pro
+
+# LTPO display on the OnePlus 9 Pro doesn't have apparent gamma shifts
+PRODUCT_ODM_PROPERTIES += \
+    ro.surface_flinger.set_idle_timer_ms=250 \
+    ro.surface_flinger.set_touch_timer_ms=300
