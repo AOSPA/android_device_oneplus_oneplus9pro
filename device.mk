@@ -25,6 +25,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_ODM)/etc/sound_trigger_platform_info.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_platform_info.xml
 
+# LTPO display on the OnePlus 9 Pro doesn't have apparent gamma shifts
+PRODUCT_ODM_PROPERTIES += \
+    ro.surface_flinger.set_idle_timer_ms=250 \
+    ro.surface_flinger.set_touch_timer_ms=300
+
 $(call inherit-product, device/oneplus/oneplus9/device.mk)
 
 # Namespaces
