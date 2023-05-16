@@ -16,3 +16,6 @@ include device/oneplus/oneplus9/BoardConfig.mk
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := OnePlus9Pro,oneplus9pro
+
+# Display density
+TARGET_SCREEN_DENSITY := 480
